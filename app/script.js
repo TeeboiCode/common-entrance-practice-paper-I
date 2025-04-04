@@ -73,7 +73,7 @@ function saveQuizResult(score) {
   let results = JSON.parse(localStorage.getItem("quizResults")) || [];
 
   const newResult = {
-    name: playerName,
+    name: `papper 1: ${playerName}`,
     score: correctPicked,
     total: quizQuestions.length,
     percentage: ((correctPicked / quizQuestions.length) * 100).toFixed(1),
